@@ -112,6 +112,7 @@ async def edit_record_route(
         exclude_none=True,
         exclude_unset=True
     )
+    print(data, record_data.model_dump())
 
     edit_record(record_type, record_id, data)
     return BaseResponse.cook()

@@ -151,7 +151,8 @@ class StockFlow(OurBase):
         'spoilage',
         'sales',
         'movements',
-        'stocks'
+        'stocks',
+        'supplies'
     }
 
     product_id = Column(
